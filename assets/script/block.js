@@ -12,7 +12,8 @@ cc.Class({
     spriteFrameList: {
       type: cc.SpriteFrame,
       default: []
-    }
+    },
+   
   },
 
   // LIFE-CYCLE CALLBACKS:
@@ -49,15 +50,18 @@ cc.Class({
         this.can_conllision = false
         js_otherBlock.can_conllision = false
 
+        main.createTx(position_self, typeNumber)
+        main.createTx(position_other, typeNumber)
+
         // 只执行一次的定时器 0.15s
         this.scheduleOnce(function () {
           // 在main.js中申明window.main = this
-          main.createBlock(position_new, typeNumber)
+          main.createBlock(position_new, typeNumber, true)
           main.addScore()
         }.bind(this), 0.15)
       }
     }
-  }
+  },
 
   // update (dt) {},
 });

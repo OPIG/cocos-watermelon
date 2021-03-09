@@ -48,11 +48,13 @@ cc.Class({
         this.node.removeFromParent();
         otherCollider.node.removeFromParent();
         this.can_conllision = false;
-        js_otherBlock.can_conllision = false; // 只执行一次的定时器 0.15s
+        js_otherBlock.can_conllision = false;
+        main.createTx(position_self, typeNumber);
+        main.createTx(position_other, typeNumber); // 只执行一次的定时器 0.15s
 
         this.scheduleOnce(function () {
           // 在main.js中申明window.main = this
-          main.createBlock(position_new, typeNumber);
+          main.createBlock(position_new, typeNumber, true);
           main.addScore();
         }.bind(this), 0.15);
       }
