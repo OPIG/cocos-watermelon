@@ -180,7 +180,7 @@
       "array": [
         0,
         0,
-        472.8909164620037,
+        465.92166723602804,
         0,
         0,
         0,
@@ -201,7 +201,7 @@
     "_is3DNode": false,
     "_groupIndex": 0,
     "groupIndex": 0,
-    "_id": "b1GQt9hRlPcKhKV/Q/0EIX"
+    "_id": "45Om57XpFNFIKlRPMmEQbL"
   },
   {
     "__type__": "cc.Camera",
@@ -237,7 +237,7 @@
     },
     "_renderStages": 1,
     "_alignWithScreen": true,
-    "_id": "deSGv7vk5PpZseJuoI7Dy8"
+    "_id": "0aWVQz1YxEBKt2Vy5f9PU+"
   },
   {
     "__type__": "cc.Node",
@@ -473,8 +473,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        -360,
-        -640,
+        0,
+        0,
         0,
         0,
         0,
@@ -541,8 +541,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
+        -360,
         0,
-        640,
         0,
         0,
         0,
@@ -692,8 +692,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        720,
-        640,
+        360,
+        0,
         0,
         0,
         0,
@@ -843,8 +843,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        360,
         0,
+        -640,
         0,
         0,
         0,
@@ -1005,6 +1005,9 @@
     "_enabled": true,
     "block1": {
       "__uuid__": "624ffdcb-ce38-4e5c-b494-317a40c4cc63"
+    },
+    "score_Label": {
+      "__id__": 8
     },
     "_id": "17B/oXYbpErow3xkVQm1X4"
   }

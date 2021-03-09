@@ -140,6 +140,21 @@
       },
       {
         "__uuid__": "f67d8937-167b-48a6-b96f-b2ea3112094f"
+      },
+      {
+        "__uuid__": "56472e9a-d74f-4f60-9020-80ad57dfc2d1"
+      },
+      {
+        "__uuid__": "861f54c3-dde4-4040-b406-40759b9fa609"
+      },
+      {
+        "__uuid__": "e3e8cccf-d2ce-4fe9-811d-3258fd3e0704"
+      },
+      {
+        "__uuid__": "0e87dab3-9bc2-4f50-860f-42bc2fd51a2e"
+      },
+      {
+        "__uuid__": "b1c6cec3-a7ec-460c-8ba0-475164bacb1d"
       }
     ],
     "_id": ""
@@ -181,7 +196,7 @@
     "_density": 1,
     "_sensor": false,
     "_friction": 1,
-    "_restitution": 0.5,
+    "_restitution": 0.2,
     "body": null,
     "_offset": {
       "__type__": "cc.Vec2",
