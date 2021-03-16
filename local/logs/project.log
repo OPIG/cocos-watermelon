@@ -1,0 +1,74 @@
+2021-03-16T02:05:26.496Z - normal: Load ~/.CocosCreator/settings.json
+2021-03-16T02:05:26.542Z - normal: Initializing Asset Database
+2021-03-16T02:05:26.560Z - normal: checking language setting...
+2021-03-16T02:05:26.560Z - normal: Language: en
+2021-03-16T02:05:27.192Z - success: protocol editor-framework registered
+2021-03-16T02:05:27.192Z - success: protocol app registered
+2021-03-16T02:05:27.192Z - success: protocol theme registered
+2021-03-16T02:05:27.192Z - success: protocol packages registered
+2021-03-16T02:05:27.193Z - success: protocol uuid registerred
+2021-03-16T02:05:27.193Z - success: protocol db registerred
+2021-03-16T02:05:27.193Z - success: protocol thumbnail registerred
+2021-03-16T02:05:27.193Z - success: protocol unpack registerred
+2021-03-16T02:05:27.193Z - success: protocol disable-commonjs registerred
+2021-03-16T02:05:27.348Z - normal: connected!
+2021-03-16T02:05:27.349Z - normal: Check project D:\AtomPracticeCode\cocos\cocos-watermelon
+2021-03-16T02:05:27.352Z - normal: Initializing project D:\AtomPracticeCode\cocos\cocos-watermelon
+2021-03-16T02:05:27.540Z - success: adapters loaded
+2021-03-16T02:05:27.545Z - success: asset-db-debugger loaded
+2021-03-16T02:05:27.589Z - success: fb-audience-network loaded
+2021-03-16T02:05:27.612Z - success: fb-live-stream loaded
+2021-03-16T02:05:27.618Z - success: google-play-instant loaded
+2021-03-16T02:05:27.621Z - success: jsb-adapter loaded
+2021-03-16T02:05:27.628Z - success: package-manager loaded
+2021-03-16T02:05:27.629Z - success: runtime-adapters loaded
+2021-03-16T02:05:27.635Z - success: runtime-dev-tools loaded
+2021-03-16T02:05:27.640Z - success: ui-kit-preview-extra loaded
+2021-03-16T02:05:27.643Z - success: ui-kit-preview loaded
+2021-03-16T02:05:27.702Z - success: alipay-minigame loaded
+2021-03-16T02:05:27.749Z - success: assets loaded
+2021-03-16T02:05:27.751Z - success: baidugame-opendata loaded
+2021-03-16T02:05:27.753Z - success: baidugame loaded
+2021-03-16T02:05:27.775Z - success: builder loaded
+2021-03-16T02:05:27.776Z - success: bytedance-opendata loaded
+2021-03-16T02:05:27.778Z - success: bytedance loaded
+2021-03-16T02:05:27.779Z - success: channel-upload-tools loaded
+2021-03-16T02:05:27.783Z - success: cloud-function loaded
+2021-03-16T02:05:27.895Z - success: cocos-services loaded
+2021-03-16T02:05:27.898Z - success: console loaded
+2021-03-16T02:05:27.899Z - success: curve-editor loaded
+2021-03-16T02:05:27.907Z - success: fb-instant-games loaded
+2021-03-16T02:05:27.910Z - success: game-window loaded
+2021-03-16T02:05:27.911Z - success: google-instant-games loaded
+2021-03-16T02:05:27.914Z - success: hierarchy loaded
+2021-03-16T02:05:27.915Z - success: huawei-agc loaded
+2021-03-16T02:05:27.917Z - success: huawei-runtime loaded
+2021-03-16T02:05:27.921Z - success: inspector loaded
+2021-03-16T02:05:27.931Z - success: cpk-publish loaded
+2021-03-16T02:05:27.931Z - success: keystore loaded
+2021-03-16T02:05:27.942Z - success: link-sure-runtime loaded
+2021-03-16T02:05:27.956Z - success: node-library loaded
+2021-03-16T02:05:27.956Z - success: open-recent-items loaded
+2021-03-16T02:05:27.958Z - success: oppo-runtime loaded
+2021-03-16T02:05:27.959Z - success: package-asset loaded
+2021-03-16T02:05:27.959Z - success: preferences loaded
+2021-03-16T02:05:27.960Z - success: project-importer loaded
+2021-03-16T02:05:27.960Z - success: project-settings loaded
+2021-03-16T02:05:27.970Z - success: qtt-runtime loaded
+2021-03-16T02:05:27.973Z - success: scene loaded
+2021-03-16T02:05:27.974Z - success: simulator-debugger loaded
+2021-03-16T02:05:27.974Z - success: sprite-editor loaded
+2021-03-16T02:05:27.997Z - success: store loaded
+2021-03-16T02:05:28.000Z - success: timeline loaded
+2021-03-16T02:05:28.002Z - success: vivo-runtime loaded
+2021-03-16T02:05:28.004Z - success: wechatgame-opendata loaded
+2021-03-16T02:05:28.006Z - success: wechatgame loaded
+2021-03-16T02:05:28.008Z - success: xiaomi-runtime loaded
+2021-03-16T02:05:28.012Z - warn: The current '7456' preview port is already occupied, the port is automatically incremented
+2021-03-16T02:05:28.013Z - success: preview server running at http://localhost:7457
+2021-03-16T02:05:30.064Z - info: Cocos Service load base data!
+2021-03-16T02:05:36.138Z - normal: Initializing Cocos2d
+2021-03-16T02:05:36.748Z - normal: Initializing engine extends
+2021-03-16T02:05:44.940Z - normal: Loading packages
+2021-03-16T02:05:44.946Z - normal: Watching packages
+2021-03-16T02:05:44.968Z - normal: Run Application

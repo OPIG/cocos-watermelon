@@ -63,18 +63,51 @@ cc.Class({
     window.main = this;
     this.f_scale = 0.8; // 整体缩小0.8
 
-    this.current_score = 0;
-    cc.director.getPhysicsManager().enabled = true;
-    this.node.on('touchstart', function (event) {
+    this.fruidCount = 0; // 当前屏幕的数量
+
+    this.current_score = 0; // 当前分数
+    // 开启物理碰撞
+
+    cc.director.getPhysicsManager().enabled = true; // 点击屏幕开始
+
+    this.node.on(cc.Node.EventType.TOUCH_START, function (event) {
+      var mouse_position = event.getLocation();
+
+      var world_position = _this.node.convertToNodeSpaceAR(mouse_position);
+
+      world_position.y = 500; // let typeNumber = this.getNextFruidId()
+      // this.createBlock(world_position, typeNumber)
+    }); // 点击屏幕移动
+
+    this.node.on(cc.Node.EventType.TOUCH_MOVE, function (event) {
+      console.log('TOUCH_MOVE');
+    }); // 点击屏幕结束
+
+    this.node.on(cc.Node.EventType.TOUCH_END, function (event) {
       var mouse_position = event.getLocation();
 
       var world_position = _this.node.convertToNodeSpaceAR(mouse_position);
 
       world_position.y = 500;
-      var randomNum = Math.floor(Math.random() * (_this.prefabList.length - 5));
 
-      _this.createBlock(world_position, randomNum);
+      var typeNumber = _this.getNextFruidId(); // 创建预制体小球
+
+
+      _this.createBlock(world_position, typeNumber);
+    }); // 取消点击屏幕
+
+    this.node.on(cc.Node.EventType.TOUCH_CANCEL, function (event) {
+      console.log('TOUCH_CANCEL');
     });
+  },
+  // 获取下一个水果的id
+  getNextFruidId: function getNextFruidId() {
+    if (this.fruidCount <= 3) {
+      return Math.floor(Math.random() * 3);
+    } else {
+      // 随机返回除了后五个之外的
+      return Math.floor(Math.random() * (this.prefabList.length - 5));
+    }
   },
   // create block
   createBlock: function createBlock(position, typeNumber, isScale) {
@@ -83,17 +116,20 @@ cc.Class({
     }
 
     if (typeNumber >= this.prefabList.length) {
-      typeNumber = this.prefabList.length;
+      typeNumber = this.prefabList.length - 1;
     }
 
     var block_Node = cc.instantiate(this.block1);
     block_Node.setPosition(cc.v2(position.x, position.y));
     block_Node.scale = this.f_scale;
+    this.fruidCount++; // 水果数量加一个
 
     if (isScale) {
       block_Node.scale = 0.3;
       var act = cc.scaleTo(0.15, this.f_scale);
       block_Node.runAction(act); // cc.tween(block_Node).to(0.15, {scale: 1})
+
+      this.fruidCount -= 1; //碰撞损耗一个
     }
 
     var fruit_sprit = block_Node.getComponent('block'); // 调用block.js方法修改sprite frame图片
@@ -108,6 +144,7 @@ cc.Class({
     console.log(typeNumber, fruitItem[0]);
     block_Node.parent = this.node;
   },
+  // 添加特效
   createTx: function createTx(position, typeNumber) {
     var bzNode = cc.instantiate(this.bzPrefab);
     bzNode.setPosition(cc.v2(position.x, position.y));
@@ -123,9 +160,10 @@ cc.Class({
       bzNode.removeFromParent();
     }).start();
   },
+  // 添加分数
   addScore: function addScore() {
     this.current_score += 1;
-    this.score_Label.string = this.current_score;
+    this.score_Label.string = 'score: ' + this.current_score;
   }
 });
 
